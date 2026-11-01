@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Pasted markdown</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Internal CSS - small project-specific overrides */
+header h1::before { content: "🔐 "; }
+header h1::after { content: " 🛡️"; }
+main > h2::before { content: "▸ "; color: #00ffa3; }
+</style>
+</head>
+<body id="about">
+<header>
+<h1 id="cyber-security-basics">Cyber Security Basics</h1>
+<p>A simple guide to staying safe online</p>
+</header>
+<nav>
+<a href="#about">About</a> | <a href="#history">History</a> | <a
+href="#cia">CIA Triad</a> | <a href="#threats">Threats</a> | <a
+href="#safety">Stay Safe</a> | <a href="#network">Network Security</a> |
+<a href="#crypto">Cryptography</a> | <a href="#hacking">Ethical
+Hacking</a> | <a href="#soc">Incident Response</a> | <a
+href="#laws">Laws</a> | <a href="#special">New Areas</a> | <a
+href="#cases">Case Studies</a> | <a href="#india">India</a> | <a
+href="#family">Kids and Parents</a> | <a href="#careers">Careers</a> |
+<a href="#glossary">Glossary</a> | <a href="#quiz">Quiz</a> | <a
+href="#faq">FAQ</a> | <a href="#contact">Contact</a>
+</nav>
+<main>
+<hr />
+<h2 id="what-is-cyber-security">What is Cyber Security?</h2>
+<p>Cyber security means protecting computers, phones, networks and data
+from people who want to steal or damage them. We use the internet for
+banking, studying, shopping and chatting, so it affects everyone and not
+just IT people.</p>
+<p>On this website you will learn the basic ideas, the most common
+attacks, how to protect yourself, and what jobs are available in this
+field.</p>
+<h3 id="main-areas-of-cyber-security">Main areas of cyber security</h3>
+<ul>
+<li><strong>Network security</strong> - protecting the connections
+between devices</li>
+<li><strong>Application security</strong> - making apps and websites
+safe from attacks</li>
+<li><strong>Endpoint security</strong> - protecting laptops, phones and
+servers</li>
+<li><strong>Cloud security</strong> - protecting data stored on cloud
+services</li>
+<li><strong>Information security</strong> - protecting data itself</li>
+<li><strong>Operational security</strong> - the rules and processes
+people follow</li>
+</ul>
+<h3 id="basic-security-principles">Basic security principles</h3>
+<ol type="1">
+<li><strong>Least privilege</strong> - give people only the access they
+really need</li>
+<li><strong>Defense in depth</strong> - use many layers of protection,
+not just one</li>
+<li><strong>Zero trust</strong> - never trust anyone automatically,
+always check</li>
+<li><strong>Separation of duties</strong> - one person should not
+control everything</li>
+</ol>
+<hr />
+<h2 id="a-short-history-of-cyber-security">A Short History of Cyber
+Security</h2>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 16%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Year</th>
+<th>Event</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1988</td>
+<td>Morris Worm</td>
+<td>One of the first worms on the internet. It slowed down thousands of
+computers.</td>
+</tr>
+<tr class="even">
+<td>2000</td>
+<td>ILOVEYOU virus</td>
+<td>Spread through email with a fake love letter and affected millions
+of computers.</td>
+</tr>
+<tr class="odd">
+<td>2010</td>
+<td>Stuxnet</td>
+<td>A very advanced worm that targeted industrial machines. It showed
+malware could cause physical damage.</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>Target breach</td>
+<td>Payment card data of millions of customers was stolen from a US
+store chain.</td>
+</tr>
+<tr class="odd">
+<td>2017</td>
+<td>WannaCry and NotPetya</td>
+<td>Huge ransomware attacks that hit hospitals, companies and
+governments.</td>
+</tr>
+<tr class="even">
+<td>2020</td>
+<td>SolarWinds</td>
+<td>A supply chain attack through a trusted software update.</td>
+</tr>
+<tr class="odd">
+<td>2021</td>
+<td>Log4Shell</td>
+<td>A serious bug in a popular library that left millions of systems
+open to attack.</td>
+</tr>
+<tr class="even">
+<td>2023</td>
+<td>MOVEit</td>
+<td>A flaw in a file transfer tool led to data theft from many
+organisations.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="the-cia-triad">The CIA Triad</h2>
+<p>Almost every security rule is based on these three goals.</p>
+<p>Confidentiality</p>
+<p>Only the right people can see the data. Example: your WhatsApp chats
+are encrypted.</p>
+<p>Integrity</p>
+<p>Data is not changed by someone without permission. Example: your bank
+balance should not change by itself.</p>
+<p>Availability</p>
+<p>You can use the system when you need it. Example: a website should
+not crash because of a DDoS attack.</p>
+<h3 id="types-of-hackers">Types of hackers</h3>
+<ul>
+<li><strong>White hat</strong> - hacks with permission to find problems
+and fix them</li>
+<li><strong>Black hat</strong> - hacks to steal or cause damage</li>
+<li><strong>Grey hat</strong> - in between, no permission but usually no
+bad intention</li>
+<li><strong>Script kiddie</strong> - uses tools made by others without
+understanding them</li>
+<li><strong>Hacktivist</strong> - hacks to support a political or social
+cause</li>
+<li><strong>State-sponsored</strong> - works for a government, usually
+very skilled</li>
+</ul>
+<hr />
+<h2 id="common-cyber-threats">Common Cyber Threats</h2>
+<h3 id="malware">Malware</h3>
+<p>Malware is any software made to harm a device or steal
+information.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Virus</td>
+<td>Attaches itself to files and spreads when you open them</td>
+</tr>
+<tr class="even">
+<td>Worm</td>
+<td>Spreads through networks on its own</td>
+</tr>
+<tr class="odd">
+<td>Trojan</td>
+<td>Looks like a useful program but is harmful</td>
+</tr>
+<tr class="even">
+<td>Ransomware</td>
+<td>Locks your files and asks for money</td>
+</tr>
+<tr class="odd">
+<td>Spyware</td>
+<td>Secretly watches what you do</td>
+</tr>
+<tr class="even">
+<td>Keylogger</td>
+<td>Records everything you type, including passwords</td>
+</tr>
+<tr class="odd">
+<td>Adware</td>
+<td>Shows unwanted ads and may track you</td>
+</tr>
+<tr class="even">
+<td>Rootkit</td>
+<td>Hides deep in the system so it is hard to find</td>
+</tr>
+<tr class="odd">
+<td>Botnet</td>
+<td>A group of infected devices controlled by one attacker</td>
+</tr>
+</tbody>
+</table>
+<h3 id="social-engineering">Social engineering</h3>
+<p>These attacks trick people instead of breaking computers. People are
+often the easiest target.</p>
+<ul>
+<li><strong>Phishing</strong> - fake emails or websites that steal
+information</li>
+<li><strong>Spear phishing</strong> - phishing aimed at one specific
+person</li>
+<li><strong>Whaling</strong> - phishing aimed at top managers</li>
+<li><strong>Vishing</strong> - fraud over phone calls</li>
+<li><strong>Smishing</strong> - fraud through SMS</li>
+<li><strong>Pretexting</strong> - making up a false story to get
+information</li>
+<li><strong>Baiting</strong> - leaving an infected pen drive for someone
+to find</li>
+<li><strong>Tailgating</strong> - following someone into a restricted
+room</li>
+</ul>
+<h3 id="how-to-spot-a-phishing-message">How to spot a phishing
+message</h3>
+<ol type="1">
+<li>It says something is urgent</li>
+<li>The sender’s email address looks strange</li>
+<li>It asks for a password, OTP or card number</li>
+<li>The link goes to a different website</li>
+<li>There are spelling mistakes</li>
+</ol>
+<h3 id="network-attacks">Network attacks</h3>
+<ul>
+<li><strong>DDoS</strong> - sends huge traffic to a website so it stops
+working</li>
+<li><strong>Man in the middle</strong> - attacker secretly listens to
+two people communicating</li>
+<li><strong>DNS spoofing</strong> - sends you to a fake website</li>
+<li><strong>ARP poisoning</strong> - tricks devices on a local
+network</li>
+<li><strong>Session hijacking</strong> - takes over your logged-in
+session</li>
+<li><strong>Packet sniffing</strong> - captures network data that is not
+encrypted</li>
+</ul>
+<h3 id="web-application-attacks">Web application attacks</h3>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 53%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attack</th>
+<th>What it means</th>
+<th>Prevention</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SQL injection</td>
+<td>Attacker types code into a form to attack the database</td>
+<td>Use parameterized queries</td>
+</tr>
+<tr class="even">
+<td>XSS</td>
+<td>Attacker runs a harmful script in another user’s browser</td>
+<td>Validate input and encode output</td>
+</tr>
+<tr class="odd">
+<td>CSRF</td>
+<td>Tricks a logged-in user into doing an action they did not want</td>
+<td>Use anti-CSRF tokens</td>
+</tr>
+<tr class="even">
+<td>Broken authentication</td>
+<td>Weak login system or weak session handling</td>
+<td>Use strong passwords and MFA</td>
+</tr>
+<tr class="odd">
+<td>Clickjacking</td>
+<td>Hides a button under another button</td>
+<td>Block the site from being framed</td>
+</tr>
+</tbody>
+</table>
+<p>The full list of the most serious web risks is called the <a
+href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a>.</p>
+<h3 id="password-attacks">Password attacks</h3>
+<ul>
+<li><strong>Brute force</strong> - trying many passwords until one
+works</li>
+<li><strong>Dictionary attack</strong> - trying common words and
+passwords</li>
+<li><strong>Credential stuffing</strong> - using leaked passwords on
+other websites</li>
+<li><strong>Password spraying</strong> - trying one common password on
+many accounts</li>
+</ul>
+<h3 id="insider-threats">Insider threats</h3>
+<p>Not all attacks come from outside. An employee can leak data on
+purpose (malicious insider) or by mistake, for example by sending a file
+to the wrong person (accidental insider).</p>
+<h3 id="advanced-threats">Advanced threats</h3>
+<ul>
+<li><strong>APT (Advanced Persistent Threat)</strong> - a skilled group
+that stays hidden inside a network for months</li>
+<li><strong>Supply chain attack</strong> - attacking a company by first
+hacking its supplier</li>
+<li><strong>Zero-day exploit</strong> - attack using a bug that has no
+fix yet</li>
+</ul>
+<h3 id="mobile-threats">Mobile threats</h3>
+<ul>
+<li>Fake apps that steal data</li>
+<li>SIM swapping, where a criminal gets a copy of your SIM</li>
+<li>Juice jacking, where public USB charging ports are used to steal
+data</li>
+</ul>
+<hr />
+<h2 id="how-to-stay-safe">How to Stay Safe</h2>
+<h3 id="personal-safety-checklist">Personal safety checklist</h3>
+<ul>
+<li>Use a different strong password for each account</li>
+<li>Turn on two-factor authentication (2FA)</li>
+<li>Keep your phone and laptop updated</li>
+<li>Do not click on unknown links</li>
+<li>Never tell anyone your OTP or PIN</li>
+<li>Be careful on public Wi-Fi</li>
+<li>Take regular backups</li>
+<li>Lock your phone and laptop with a PIN or fingerprint</li>
+<li>Download apps only from official stores</li>
+<li>Check app permissions before you allow them</li>
+</ul>
+<h3 id="what-makes-a-good-password">What makes a good password?</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 34%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weak password</th>
+<th>Better password</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>password123</td>
+<td>BlueTrain-Coffee-Window-42</td>
+<td>A long passphrase is hard to guess but easy to remember</td>
+</tr>
+<tr class="even">
+<td>myname2005</td>
+<td>A random password from a password manager</td>
+<td>Personal details are easy for attackers to guess</td>
+</tr>
+<tr class="odd">
+<td>Same password everywhere</td>
+<td>A different password for each site</td>
+<td>One leak will not affect your other accounts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="authentication-methods">Authentication methods</h3>
+<ul>
+<li><strong>Something you know</strong> - password or PIN</li>
+<li><strong>Something you have</strong> - phone, OTP app or security
+key</li>
+<li><strong>Something you are</strong> - fingerprint or face</li>
+</ul>
+<p>Using two or more of these together is called multi-factor
+authentication (MFA).</p>
+<h3 id="tools-that-help">Tools that help</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Firewall</td>
+<td>Blocks unwanted network traffic</td>
+</tr>
+<tr class="even">
+<td>Antivirus / EDR</td>
+<td>Finds and removes malware</td>
+</tr>
+<tr class="odd">
+<td>VPN</td>
+<td>Encrypts your internet connection</td>
+</tr>
+<tr class="even">
+<td>Password manager</td>
+<td>Stores strong passwords safely</td>
+</tr>
+<tr class="odd">
+<td>Disk encryption</td>
+<td>Protects your files if your laptop is stolen</td>
+</tr>
+<tr class="even">
+<td>Patch management</td>
+<td>Keeps software updated so known bugs are fixed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="backup-rule">3-2-1 backup rule</h3>
+<p>Keep 3 copies of your data, on 2 different types of storage, with 1
+copy kept somewhere else (like cloud or another location).</p>
+<h3 id="email-security">Email security</h3>
+<p>Companies protect their email using three checks:</p>
+<ul>
+<li><strong>SPF</strong> - lists which servers are allowed to send email
+for a domain</li>
+<li><strong>DKIM</strong> - adds a digital signature to prove the email
+was not changed</li>
+<li><strong>DMARC</strong> - tells receivers what to do if SPF or DKIM
+fails</li>
+</ul>
+<hr />
+<h2 id="network-security">Network Security</h2>
+<p>A network is where computers talk to each other, so it needs
+protection too.</p>
+<p>Firewall</p>
+<p>Works like a security guard that allows or blocks traffic based on
+rules.</p>
+<p>IDS and IPS</p>
+<p>An Intrusion Detection System warns you about suspicious activity. An
+Intrusion Prevention System also blocks it.</p>
+<p>Network segmentation</p>
+<p>Dividing a network into parts so an attacker cannot reach everything
+if one part is hacked.</p>
+<p>VPN</p>
+<p>Creates an encrypted tunnel between your device and another
+network.</p>
+<p>Wi-Fi security</p>
+<p>Use WPA2 or WPA3 and a strong Wi-Fi password. Never use open networks
+without protection, and change the default router password.</p>
+<h3 id="common-ports">Common ports</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+<td>File transfer, not encrypted</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>SSH</td>
+<td>Secure remote login</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>SMTP</td>
+<td>Sending email</td>
+</tr>
+<tr class="even">
+<td>53</td>
+<td>DNS</td>
+<td>Converts website names to IP addresses</td>
+</tr>
+<tr class="odd">
+<td>80</td>
+<td>HTTP</td>
+<td>Normal websites, not encrypted</td>
+</tr>
+<tr class="even">
+<td>443</td>
+<td>HTTPS</td>
+<td>Secure websites</td>
+</tr>
+<tr class="odd">
+<td>3389</td>
+<td>RDP</td>
+<td>Windows remote desktop, often attacked</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud-security">Cloud security</h3>
+<p>Cloud providers like AWS, Azure and Google Cloud follow a
+<strong>shared responsibility model</strong>. The provider secures the
+data centre and hardware, but the customer must secure their own data,
+accounts and settings. Most cloud breaches happen because of wrong
+settings, like leaving a storage bucket public.</p>
+<hr />
+<h2 id="cryptography">Cryptography</h2>
+<p>Cryptography is the science of hiding information so only the right
+person can read it. Normal text is called plaintext and the scrambled
+version is called ciphertext.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>How it works</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Symmetric</td>
+<td>Same key to lock and unlock</td>
+<td>AES</td>
+</tr>
+<tr class="even">
+<td>Asymmetric</td>
+<td>Public key to lock, private key to unlock</td>
+<td>RSA, ECC</td>
+</tr>
+<tr class="odd">
+<td>Hashing</td>
+<td>One-way, cannot be reversed</td>
+<td>SHA-256</td>
+</tr>
+</tbody>
+</table>
+<h3 id="caesar-cipher-example">Caesar cipher example</h3>
+<p>The Caesar cipher is an old method where each letter is shifted by a
+fixed number. With a shift of 3, A becomes D, B becomes E and so on. So
+the word <strong>CAT</strong> becomes <strong>FDW</strong>. It is easy
+to break, but it is good for understanding the idea.</p>
+<h3 id="how-https-works-simple-version">How HTTPS works (simple
+version)</h3>
+<ol type="1">
+<li>Your browser asks the website for its certificate</li>
+<li>The browser checks that the certificate is valid and trusted</li>
+<li>Both sides agree on a secret session key</li>
+<li>After that, all data is encrypted using that key</li>
+</ol>
+<p>When you see the padlock and https in your browser, it means the
+connection between you and the website is encrypted.</p>
+<h3 id="more-topics">More topics</h3>
+<ul>
+<li><strong>Salting</strong> - adding random data to a password before
+hashing it</li>
+<li><strong>Digital signature</strong> - proves who sent a message and
+that it was not changed</li>
+<li><strong>Digital certificate</strong> - proves a website is really
+who it says it is</li>
+<li><strong>End-to-end encryption</strong> - only the sender and
+receiver can read the message</li>
+<li><strong>Steganography</strong> - hiding a secret message inside an
+image or file</li>
+<li><strong>Post-quantum cryptography</strong> - new methods designed to
+stay safe from future quantum computers</li>
+</ul>
+<hr />
+<h2 id="ethical-hacking">Ethical Hacking</h2>
+<p>Ethical hackers test systems <strong>with written permission</strong>
+to find weak points before criminals do. Hacking without permission is
+illegal.</p>
+<h3 id="phases-of-ethical-hacking">Phases of ethical hacking</h3>
+<ol type="1">
+<li><strong>Reconnaissance</strong> - collecting information about the
+target</li>
+<li><strong>Scanning</strong> - looking for open ports and weak
+points</li>
+<li><strong>Gaining access</strong> - using a weakness to get in</li>
+<li><strong>Maintaining access</strong> - checking if the attacker could
+stay inside</li>
+<li><strong>Reporting</strong> - writing down what was found and how to
+fix it</li>
+</ol>
+<h3 id="types-of-testing">Types of testing</h3>
+<p>Black box</p>
+<p>The tester knows nothing about the system.</p>
+<p>White box</p>
+<p>The tester has full information, even the source code.</p>
+<p>Grey box</p>
+<p>The tester has some information.</p>
+<h3 id="teams">Teams</h3>
+<ul>
+<li><strong>Red team</strong> - acts like the attacker</li>
+<li><strong>Blue team</strong> - defends the system</li>
+<li><strong>Purple team</strong> - red and blue teams working
+together</li>
+</ul>
+<h3 id="popular-tools-for-learning-and-authorised-testing">Popular tools
+(for learning and authorised testing)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nmap</td>
+<td>Scans a network to find devices and open ports</td>
+</tr>
+<tr class="even">
+<td>Wireshark</td>
+<td>Captures and shows network traffic</td>
+</tr>
+<tr class="odd">
+<td>Burp Suite</td>
+<td>Tests web applications for weaknesses</td>
+</tr>
+<tr class="even">
+<td>Metasploit</td>
+<td>A framework used in penetration testing</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bug-bounty">Bug bounty</h3>
+<p>Many companies pay people who find and report security bugs
+responsibly. Platforms like HackerOne and Bugcrowd list these
+programs.</p>
+<hr />
+<h2 id="security-operations-and-incident-response">Security Operations
+and Incident Response</h2>
+<h3 id="what-is-a-soc">What is a SOC?</h3>
+<p>A Security Operations Center (SOC) is a team that watches a company’s
+systems all day and night. They use tools like a SIEM (for example
+Splunk or Wazuh) that collect logs and raise alerts when something looks
+wrong.</p>
+<h3 id="incident-response-steps">Incident response steps</h3>
+<ol type="1">
+<li><strong>Preparation</strong> - make a plan and train the team</li>
+<li><strong>Identification</strong> - find out that an attack is
+happening</li>
+<li><strong>Containment</strong> - stop it from spreading</li>
+<li><strong>Eradication</strong> - remove the cause, like malware</li>
+<li><strong>Recovery</strong> - bring systems back to normal</li>
+<li><strong>Lessons learned</strong> - study what went wrong so it does
+not happen again</li>
+</ol>
+<h3 id="digital-forensics">Digital forensics</h3>
+<p>Digital forensics means collecting and studying digital evidence from
+computers and phones. The evidence must be handled carefully, and a
+record called the <strong>chain of custody</strong> shows who handled it
+and when, so it can be accepted in court.</p>
+<h3 id="disaster-recovery">Disaster recovery</h3>
+<p>Companies also make a business continuity plan and a disaster
+recovery plan, so they can keep working or recover quickly after an
+attack, fire or power failure.</p>
+<hr />
+<h2 id="laws-rules-and-frameworks">Laws, Rules and Frameworks</h2>
+<h3 id="risk-management">Risk management</h3>
+<p>Risk is how likely a threat is to use a weakness, and how bad the
+damage would be. Companies check their risks, decide which ones to
+reduce, and write security policies for employees to follow.</p>
+<h3 id="frameworks">Frameworks</h3>
+<ul>
+<li><strong>NIST Cybersecurity Framework</strong> - guidelines to
+identify, protect, detect, respond and recover</li>
+<li><strong>ISO 27001</strong> - international standard for managing
+information security</li>
+<li><strong>CIS Controls</strong> - a list of practical security
+actions</li>
+<li><strong>MITRE ATT&amp;CK</strong> - a knowledge base of how
+attackers behave</li>
+</ul>
+<h3 id="laws-and-regulations">Laws and regulations</h3>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 69%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Law or standard</th>
+<th>Region</th>
+<th>About</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IT Act, 2000</td>
+<td>India</td>
+<td>Main law for cyber crime and electronic records</td>
+</tr>
+<tr class="even">
+<td>DPDP Act, 2023</td>
+<td>India</td>
+<td>Digital Personal Data Protection law</td>
+</tr>
+<tr class="odd">
+<td>CERT-In</td>
+<td>India</td>
+<td>National agency that handles cyber incidents and issues
+guidelines</td>
+</tr>
+<tr class="even">
+<td>GDPR</td>
+<td>European Union</td>
+<td>Data privacy law</td>
+</tr>
+<tr class="odd">
+<td>HIPAA</td>
+<td>USA</td>
+<td>Protects health information</td>
+</tr>
+<tr class="even">
+<td>PCI-DSS</td>
+<td>Worldwide</td>
+<td>Security standard for companies that handle card payments</td>
+</tr>
+</tbody>
+</table>
+<h3 id="privacy-and-security">Privacy and security</h3>
+<p>Security protects data from attackers. Privacy decides how personal
+data is collected and used. You need both: a company can keep data very
+secure and still misuse it.</p>
+<hr />
+<h2 id="new-and-special-areas">New and Special Areas</h2>
+<h3 id="iot-security">IoT security</h3>
+<p>Smart cameras, smart TVs, watches and home devices are all connected
+to the internet. Many have weak default passwords, so attackers use them
+to build botnets. Always change default passwords and update the
+device.</p>
+<h3 id="industrial-and-ot-security">Industrial and OT security</h3>
+<p>Power plants, factories, water supply and railways use control
+systems like SCADA. An attack on them can affect the real world, so they
+need strong protection.</p>
+<h3 id="ai-and-cyber-security">AI and cyber security</h3>
+<ul>
+<li>Defenders use AI to detect unusual behaviour and block attacks
+faster</li>
+<li>Attackers use AI to write more believable phishing emails</li>
+<li><strong>Deepfakes</strong> are fake videos or voices that look real
+and can be used for fraud</li>
+<li><strong>Prompt injection</strong> is when someone gives hidden
+instructions to an AI chatbot to make it behave wrongly</li>
+</ul>
+<h3 id="other-emerging-threats">Other emerging threats</h3>
+<ul>
+<li><strong>Cryptojacking</strong> - secretly using your device to mine
+cryptocurrency</li>
+<li><strong>QR code phishing</strong> - fake QR codes that lead to
+harmful websites</li>
+<li><strong>Cyber warfare</strong> - attacks between countries on
+important infrastructure</li>
+</ul>
+<h3 id="the-dark-web">The dark web</h3>
+<p>The dark web is a hidden part of the internet that needs special
+software like Tor to open. It has some legal uses, like private
+communication, but stolen data is also sold there. Security teams watch
+it to see if their company data has leaked.</p>
+<hr />
+<h2 id="famous-cyber-attacks">Famous Cyber Attacks</h2>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 2%" />
+<col style="width: 60%" />
+<col style="width: 24%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attack</th>
+<th>Year</th>
+<th>What happened</th>
+<th>Lesson</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>WannaCry</td>
+<td>2017</td>
+<td>Ransomware spread to computers all over the world because many
+systems were not updated</td>
+<td>Install updates quickly</td>
+</tr>
+<tr class="even">
+<td>Equifax</td>
+<td>2017</td>
+<td>Personal data of around 147 million people was stolen</td>
+<td>Fix known bugs in time</td>
+</tr>
+<tr class="odd">
+<td>SolarWinds</td>
+<td>2020</td>
+<td>Hackers hid malicious code inside a normal software update</td>
+<td>Suppliers are also a risk</td>
+</tr>
+<tr class="even">
+<td>Colonial Pipeline</td>
+<td>2021</td>
+<td>Ransomware stopped a large fuel pipeline in the USA</td>
+<td>Protect remote access with MFA</td>
+</tr>
+<tr class="odd">
+<td>Log4Shell</td>
+<td>2021</td>
+<td>A bug in a common library put millions of systems at risk</td>
+<td>Know what software your system uses</td>
+</tr>
+<tr class="even">
+<td>Cosmos Bank</td>
+<td>2018</td>
+<td>Hackers stole a large amount of money from a bank in Pune through
+ATM and card fraud</td>
+<td>Banks need strong monitoring</td>
+</tr>
+<tr class="odd">
+<td>AIIMS Delhi</td>
+<td>2022</td>
+<td>Ransomware attack affected hospital services in India</td>
+<td>Keep backups and separate networks</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cyber-safety-in-india">Cyber Safety in India</h2>
+<h3 id="common-frauds">Common frauds</h3>
+<ul>
+<li><strong>OTP fraud</strong> - a fake bank caller asks for your
+OTP</li>
+<li><strong>UPI scam</strong> - you are asked to enter your PIN to
+“receive” money (you never need a PIN to receive money)</li>
+<li><strong>Fake job offers</strong> - they ask you to pay a
+registration fee</li>
+<li><strong>KYC scam</strong> - a message says your account will be
+blocked unless you update KYC</li>
+<li><strong>Lottery scam</strong> - you “won” a prize but must pay
+first</li>
+<li><strong>Fake customer care</strong> - scammers put fake helpline
+numbers online</li>
+</ul>
+<h3 id="if-you-become-a-victim">If you become a victim</h3>
+<ol type="1">
+<li>Call your bank right away and block your card or account</li>
+<li>Call the cyber crime helpline <strong>1930</strong></li>
+<li>Report on <a
+href="https://cybercrime.gov.in">cybercrime.gov.in</a></li>
+<li>Change your passwords</li>
+<li>Keep screenshots and messages as proof</li>
+</ol>
+<h3 id="what-to-do-if-your-account-is-hacked">What to do if your account
+is hacked</h3>
+<ol type="1">
+<li>Disconnect the device from the internet</li>
+<li>Change passwords from another safe device</li>
+<li>Turn on 2FA</li>
+<li>Scan the device for malware</li>
+<li>Tell your friends if your social media was used to send spam</li>
+</ol>
+<h3 id="safe-use-of-social-media">Safe use of social media</h3>
+<ul>
+<li>Keep your profile private if you can</li>
+<li>Do not post your phone number, address or travel plans</li>
+<li>Do not accept friend requests from strangers</li>
+<li>Check your privacy settings regularly</li>
+</ul>
+<hr />
+<h2 id="for-kids-parents-and-small-businesses">For Kids, Parents and
+Small Businesses</h2>
+<h3 id="tips-for-kids">Tips for kids</h3>
+<ul>
+<li>Never share your password with anyone except your parents</li>
+<li>Do not talk to strangers online</li>
+<li>Do not share photos or your school name publicly</li>
+<li>Tell a trusted adult if something online makes you
+uncomfortable</li>
+</ul>
+<h3 id="tips-for-parents">Tips for parents</h3>
+<ul>
+<li>Talk with children about what they do online</li>
+<li>Use parental controls and safe search</li>
+<li>Keep devices in common areas of the house</li>
+<li>Teach children that it is okay to say no and to ask for help</li>
+</ul>
+<h3 id="tips-for-small-businesses">Tips for small businesses</h3>
+<ul>
+<li>Use MFA on email, banking and accounting accounts</li>
+<li>Keep regular backups and test them</li>
+<li>Train employees to spot phishing</li>
+<li>Update software and the router</li>
+<li>Give employees only the access they need</li>
+</ul>
+<hr />
+<h2 id="careers-in-cyber-security">Careers in Cyber Security</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 79%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Job</th>
+<th>What they do</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SOC Analyst</td>
+<td>Watches for alerts and responds to attacks</td>
+</tr>
+<tr class="even">
+<td>Penetration Tester</td>
+<td>Legally hacks systems to find weak points</td>
+</tr>
+<tr class="odd">
+<td>Security Engineer</td>
+<td>Builds and manages security systems</td>
+</tr>
+<tr class="even">
+<td>GRC Analyst</td>
+<td>Handles risk, rules and compliance</td>
+</tr>
+<tr class="odd">
+<td>Forensic Analyst</td>
+<td>Investigates cyber crimes and collects evidence</td>
+</tr>
+<tr class="even">
+<td>CISO</td>
+<td>Chief Information Security Officer, the head of security in a
+company</td>
+</tr>
+</tbody>
+</table>
+<h3 id="certifications">Certifications</h3>
+<ul>
+<li><strong>Beginner:</strong> Google Cybersecurity Certificate, CompTIA
+Security+</li>
+<li><strong>Middle level:</strong> CEH (Certified Ethical Hacker),
+CCNA</li>
+<li><strong>Advanced:</strong> CISSP, CISA, OSCP</li>
+</ul>
+<h3 id="skills-roadmap">Skills roadmap</h3>
+<ol type="1">
+<li>Learn computer basics and networking</li>
+<li>Learn the Linux command line</li>
+<li>Learn Python or Bash scripting</li>
+<li>Study common attacks and defences</li>
+<li>Practice on labs and CTF challenges</li>
+<li>Get a certification and build a small portfolio</li>
+</ol>
+<h3 id="where-to-practice">Where to practice</h3>
+<ul>
+<li><a href="https://tryhackme.com">TryHackMe</a></li>
+<li><a href="https://www.hackthebox.com">Hack The Box</a></li>
+<li><a href="https://overthewire.org">OverTheWire</a></li>
+</ul>
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p>Attack surface</p>
+<p>All the places where an attacker could try to get in.</p>
+<p>Authentication</p>
+<p>Proving who you are, for example with a password.</p>
+<p>Authorization</p>
+<p>Deciding what you are allowed to do after you log in.</p>
+<p>Encryption</p>
+<p>Turning data into a secret code.</p>
+<p>Exploit</p>
+<p>A way to use a weakness to attack a system.</p>
+<p>Patch</p>
+<p>An update that fixes a security bug.</p>
+<p>Payload</p>
+<p>The harmful part of malware.</p>
+<p>Risk</p>
+<p>The chance of something bad happening, and how bad it would be.</p>
+<p>Threat</p>
+<p>Anything that could cause harm.</p>
+<p>Vulnerability</p>
+<p>A weakness in a system.</p>
+<p>Zero-day</p>
+<p>A bug that the maker does not know about yet, so there is no fix.</p>
+<hr />
+<h2 id="quick-quiz">Quick Quiz</h2>
+<p>Click on a question to see the answer.</p>
+<p>1. What does CIA stand for in cyber security?</p>
+<p>Confidentiality, Integrity and Availability</p>
+<p>2. What is it called when a fake email tricks you into giving
+information?</p>
+<p>Phishing</p>
+<p>3. Can a hash be reversed?</p>
+<p>No, hashing is one-way</p>
+<p>4. Which number do you call to report cyber fraud in India?</p>
+<p>1930</p>
+<p>5. What type of malware locks your files and asks for money?</p>
+<p>Ransomware</p>
+<p>6. What does MFA mean?</p>
+<p>Multi-factor authentication</p>
+<p>7. Which port is used by HTTPS?</p>
+<p>443</p>
+<p>8. In the 3-2-1 backup rule, what does the 1 stand for?</p>
+<p>One copy kept offsite or offline</p>
+<p>9. What is a zero-day?</p>
+<p>A bug that the vendor does not know about, so no patch exists yet</p>
+<p>10. Which team acts like the attacker in a security exercise?</p>
+<p>The red team</p>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p>Is a VPN enough to keep me safe?</p>
+<p>No. A VPN protects your connection, but it does not stop phishing,
+malware or weak passwords.</p>
+<p>Are password managers safe?</p>
+<p>Good ones encrypt your passwords. Using one is safer than reusing the
+same password.</p>
+<p>Do Macs and iPhones get viruses?</p>
+<p>Yes, they can. They are not immune, so updates and safe habits are
+still important.</p>
+<p>How can I check if my email was in a data breach?</p>
+<p>Go to <a href="https://haveibeenpwned.com">Have I Been Pwned</a> and
+enter your email.</p>
+<p>Do I need a degree to start a career in cyber security?</p>
+<p>Not always. Skills, certifications and hands-on practice matter a
+lot, but many people also start with a computer science degree.</p>
+<hr />
+<h2 id="useful-links">Useful Links</h2>
+<ul>
+<li><a href="https://owasp.org">OWASP</a></li>
+<li><a href="https://www.nist.gov/cyberframework">NIST Cybersecurity
+Framework</a></li>
+<li><a href="https://attack.mitre.org">MITRE ATT&amp;CK</a></li>
+<li><a href="https://www.cert-in.org.in">CERT-In</a></li>
+<li><a href="https://cybercrime.gov.in">National Cyber Crime Reporting
+Portal</a></li>
+<li><a href="https://haveibeenpwned.com">Have I Been Pwned</a></li>
+</ul>
+<hr />
+<h2 id="contact">Contact</h2>
+<p>Name:</p>
+<p>Email:</p>
+<p>Your level: Beginner Intermediate Advanced</p>
+<p>Message:</p>
+<hr />
+<p><a href="#about">Back to top</a></p>
+<p>Made for learning purposes. Sources: OWASP, NIST, CERT-In.</p>
+<hr />
+<footer>
+<p>🔐 Cyber Security Basics | Made for learning purposes</p>
+<p>Sources: OWASP, NIST, CERT-In</p>
+<a href="#about">Back to top ↑</a>
+</footer>
+</main>
+</body>
+</html>
